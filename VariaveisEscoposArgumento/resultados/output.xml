@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.2 on win32)" generated="20230405 17:01:43.725" rpa="false" schemaversion="3">
+<suite id="s1" name="Tarefa05" source="D:\Users\User\Downloads\Robot\VariaveisEscoposArgumento\Tarefa05.robot">
+<test id="s1-t1" name="Caso de teste Tarefa 05" line="10">
+<kw name="Criando email personalizado">
+<kw name="Word" library="FakerLibrary">
+<var>${PALAVRAFAKE}</var>
+<doc>Generate a word.</doc>
+<msg timestamp="20230405 17:01:44.622" level="INFO">${PALAVRAFAKE} = item</msg>
+<status status="PASS" starttime="20230405 17:01:44.622" endtime="20230405 17:01:44.622"/>
+</kw>
+<kw name="Difinindo Usuario">
+<var>${NOVO_EMAIL}</var>
+<arg>${PESSOA.nome}</arg>
+<arg>${PESSOA.sobrenome}</arg>
+<arg>${PALAVRAFAKE}</arg>
+<arg>${PESSOA.email}</arg>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${None}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230405 17:01:44.624" endtime="20230405 17:01:44.625"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Nome Usuário: ${NOME_USUARIO}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230405 17:01:44.625" endtime="20230405 17:01:44.626"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Sobrenome: ${SOBRENOME_USUARIO}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230405 17:01:44.626" endtime="20230405 17:01:44.627"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Palavra Aleatoria: ${PALAVRA_FAKE}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230405 17:01:44.627" endtime="20230405 17:01:44.627"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Email: ${EMAIL_USUARIO}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230405 17:01:44.628" endtime="20230405 17:01:44.628"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${PRE_EMAIL}</var>
+<arg>${NOME_USUARIO}${SOBRENOME_USUARIO}${PALAVRA_FAKE}${EMAIL_USUARIO}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20230405 17:01:44.629" level="INFO">${PRE_EMAIL} = FelipeManoelitem@testerobot.com</msg>
+<status status="PASS" starttime="20230405 17:01:44.628" endtime="20230405 17:01:44.629"/>
+</kw>
+<msg timestamp="20230405 17:01:44.629" level="INFO">${NOVO_EMAIL} = FelipeManoelitem@testerobot.com</msg>
+<status status="PASS" starttime="20230405 17:01:44.622" endtime="20230405 17:01:44.629"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${NOVO_EMAIL}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230405 17:01:44.629" endtime="20230405 17:01:44.629"/>
+</kw>
+<status status="PASS" starttime="20230405 17:01:44.621" endtime="20230405 17:01:44.629"/>
+</kw>
+<status status="PASS" starttime="20230405 17:01:44.620" endtime="20230405 17:01:44.630"/>
+</test>
+<doc>Tarefa 05 do curso de Robot</doc>
+<status status="PASS" starttime="20230405 17:01:43.727" endtime="20230405 17:01:44.631"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tarefa05">Tarefa05</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
